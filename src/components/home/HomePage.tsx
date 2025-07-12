@@ -62,7 +62,22 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 text-white py-16">
+      <div className="relative bg-gradient-to-br from-gray-900 via-indigo-900 to-black text-white py-16 overflow-hidden">
+        {/* Glitter effect */}
+        <div className="pointer-events-none absolute inset-0 z-0">
+          <svg width="100%" height="100%">
+        <filter id="glitter">
+          <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" seed="8" />
+          <feColorMatrix type="saturate" values="0" />
+          <feComponentTransfer>
+            <feFuncA type="discrete" tableValues="0 0 0 0.2 0 0 0.3 0 0.1 0" />
+          </feComponentTransfer>
+        </filter>
+        <rect width="100%" height="100%" filter="url(#glitter)" fill="white" opacity="0.25" />
+          </svg>
+        </div>
+        {/* Content goes above glitter */}
+        <div className="relative z-10"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="flex justify-center mb-6">

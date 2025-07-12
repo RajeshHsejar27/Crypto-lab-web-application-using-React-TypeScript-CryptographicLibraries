@@ -14,7 +14,7 @@ const Header: React.FC<HeaderProps> = ({ activeTab, onTabChange }) => {
   ];
 
   return (
-    <header className="bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg">
+    <header className="bg-gradient-to-r from-gray-900 via-yellow-700 to-yellow-500 text-white shadow-lg" style={{ backgroundImage: 'linear-gradient(90deg, #181818 0%, #bfa14a 50%, #181818 100%), repeating-linear-gradient(135deg, rgba(255,215,0,0.15) 0px, rgba(255,215,0,0.15) 2px, transparent 2px, transparent 8px)', backgroundBlendMode: 'overlay' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo and Title */}

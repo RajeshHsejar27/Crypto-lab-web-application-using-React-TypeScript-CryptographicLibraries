@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold text-white mb-4">About CryptoLab</h3>
             <p className="text-sm text-gray-400 mb-4">
               An educational platform for learning cryptographic concepts through interactive demonstrations.
-              Built with modern web technologies and industry-standard encryption libraries.
+              Built with modern web tech stack and industry-standard encryption libraries.
             </p>
             <div className="flex space-x-4">
               <a
@@ -31,48 +31,23 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* Resources Section */}
-          <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Resources</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  Cryptography Basics
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  Security Best Practices
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  API Documentation
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  Source Code
-                </a>
-              </li>
-            </ul>
-          </div>
+
 
           {/* Security Notice */}
-          <div>
-            <h3 className="text-lg font-semibold text-white mb-4 flex items-center">
+            <div className="md:col-start-3 md:col-end-4 md:text-right">
+            <h3 className="text-lg font-semibold text-white mb-4 flex items-center md:justify-end">
               <AlertTriangle className="h-5 w-5 mr-2 text-yellow-400" />
               Security Notice
             </h3>
-            <p className="text-sm text-gray-400 mb-4">
+            <p className="text-sm text-gray-400 mb-4 md:ml-auto md:inline-block md:text-right">
               This application is for educational purposes only. All cryptographic operations are performed 
               client-side in your browser. Do not use this for encrypting sensitive real-world data.
             </p>
-            <p className="text-xs text-gray-500">
+            <p className="text-xs text-gray-500 md:ml-auto md:inline-block md:text-right">
               Always use production-grade cryptographic libraries and follow security best practices 
               in real applications.
             </p>
-          </div>
+            </div>
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
