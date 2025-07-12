@@ -262,18 +262,6 @@ Security-related contributions are especially welcome:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🔗 Resources
-
-### Cryptographic Standards
-- [NIST Cryptographic Standards](https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines)
-- [OWASP Cryptographic Storage Cheat Sheet](https://owasp.org/www-project-cheat-sheets/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html)
-- [RFC 3447 - PKCS #1: RSA Cryptography Specifications](https://tools.ietf.org/html/rfc3447)
-
-### Learning Resources
-- [Cryptography Engineering](https://www.schneier.com/books/cryptography_engineering/)
-- [Applied Cryptography](https://www.schneier.com/books/applied_cryptography/)
-- [Coursera Cryptography Courses](https://www.coursera.org/learn/crypto)
-
 ### Technical Documentation
 - [Web Crypto API Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API)
 - [Node.js Crypto Module](https://nodejs.org/api/crypto.html)
